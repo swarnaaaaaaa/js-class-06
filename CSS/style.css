@@ -1,0 +1,86 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+    --navColor:white;
+    --bodyColor:white;
+    --textColor: #242424;
+}
+.darkmode{
+    --navColor:#242424;
+    --bodyColor: rgb(33,35,40);
+    --textColor: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,span,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bodyColor);
+    transition: 0.03s ease;
+}
+/* --NAVBAR CSS START--- */
+nav{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px 0;
+    background-color: var(--navColor);
+}
+nav a{
+    color: var(--textColor);
+    margin: 0 15px;
+}
+nav .darkBtn{
+width: 40px;
+height: 40px;
+border: none;
+outline: 1px solid;
+overflow: hidden;
+}
+nav .darkBtn span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 20px;
+}
+nav .sunIcon{
+background-color: yellow;
+transition: 3.35s;
+}
+.darkmode nav .sunIcon{
+    margin-top: -100%;
+}
+nav .moonIcon{
+background-color: rgb(0, 0, 0);
+color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--textColor);
+}
+/* ---NAVBAR CSS END--- */
+
+/* ---FAQ CSS START--- */
+section{
+    height: 100vh;
+}
+.faq {
+    border: 1px solid #aaa;
+}
+.faqHeader{
+    border-bottom: 1px solid #aaa;
+    display: flex;
+}
+/* ---FAQ CSS END--- */
